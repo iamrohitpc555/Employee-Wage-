@@ -1,32 +1,24 @@
 package EmpWage;
 
-public class Emp_wage_swichcase {
-
-
-	
-
-	public static void main(String[] args) {
-		
-		float Per_Hour= 20;
-		int Full_Day= 0;
-		int Part_Time = 0;
-		int Emp_Check= (int) (Math.floor(Math.random() *10 ) % 2);
-		float Emp_wage;
-		int emp_hour=0;
-				
-		switch (Emp_Check)
-		{
-		case Full_Day:
-				emp_hour=8;
-				break;
-		case Part_Time:
-				emp_hour=4;
-			break;
-			
-			Emp_wage= (emp_hour * Per_Hour);
-			System.out.println(Emp_wage);
-			
+public class Daily_Emp_Wage 
+{
+		public static void main(String[] args)
+		{	
+			float Per_Hour= 20;
+			float Full_Day= 8;
+			float Part_Time = 4;
+			double Emp_Type=(Math.floor(Math.random() *10 ) % 2);
+			System.out.println(Emp_Type);
+			float Daily_wage;
+			if (Emp_Type == 1)
+			{
+			Daily_wage= (Per_Hour * Full_Day);
+			System.out.println(Daily_wage);
+			}
+			else
+			{	
+			Daily_wage=(Per_Hour * Part_Time);
+			System.out.println(Daily_wage);
+			}
 		}
-	}
-
 }
