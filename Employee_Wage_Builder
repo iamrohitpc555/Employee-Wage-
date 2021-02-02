@@ -30,5 +30,5 @@ public class UC7EmpWageBuilderRefactorClass{
    }
    public static void main(String args[]){
        evaluateEmpWage();
-   }
+  }
 }
